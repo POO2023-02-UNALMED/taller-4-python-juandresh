@@ -3,7 +3,7 @@ from classroom.asignatura import Asignatura
 class Grupo:
     grado = None
 
-    def __init__(self, grupo="grupo ordinado", asignaturas=None, estudiantes=None):
+    def __init__(self, grupo="grupo ordinario", asignaturas=None, estudiantes=None):
         self._grupo = grupo
         self._asignaturas = asignaturas
         self._listadoAlumnos = estudiantes
@@ -14,7 +14,7 @@ class Grupo:
 
     def agregarAlumno(self, alumno, lista=None):
         if lista is None:
-            lista=[]
+            lista = []
         lista.append(alumno)
         self._listadoAlumnos = self._listadoAlumnos + lista
 
