@@ -18,12 +18,14 @@ class Grupo:
         lista.append(alumno)
         self._listadoAlumnos = self._listadoAlumnos + lista
 
-    def __str__(self):
-        
+    #def __str__(self):
+    #    asignatura_str = ', '.join(map(str, self._asignaturas))
+    #    alumnos_str = ', '.join(self._listadoAlumnos)
+    #    return f"{self._grupo}\n{asignatura_str}\n{self.grado}\n{alumnos_str}"
 
     @ classmethod
     def asignarNombre(cls, nombre="Grado 6"):
-        cls.grado = nombre
+       cls.grado = nombre
 
     @ classmethod
     def asignarNombre(cls, nombre="Grado 6"):
