@@ -6,7 +6,7 @@ class Grupo:
     def __init__(self, grupo="grupo ordinario", asignaturas=None, estudiantes=None):
         self._grupo = grupo
         self._asignaturas = asignaturas
-        self._listadoAlumnos = estudiantes
+        self.listadoAlumnos = estudiantes
 
     def listadoAsignaturas(self, **kwargs):
         for x in kwargs.values():
@@ -14,7 +14,7 @@ class Grupo:
 
     def agregarAlumno(self, alumno, lista=[]):
         lista.append(alumno)
-        self._listadoAlumnos = self._listadoAlumnos + lista
+        self.listadoAlumnos = self.listadoAlumnos + lista
 
     def __str__(self):
         return(f'{self._grupo}')
